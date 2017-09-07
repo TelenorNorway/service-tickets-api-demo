@@ -73,7 +73,7 @@ class TicketMaster
         if (response.getStatus() == Response.Status.OK.getStatusCode()) {
             AccessToken readEntity = response.readEntity(AccessToken.class);
             String resultTxt = readEntity.toString();
-            logger.log(Level.INFO, "Result : %S", resultTxt);
+            logger.log(Level.INFO, "Result : %s", resultTxt);
             //ok, fetch a list of incidents.
             return readEntity;
         }else {
@@ -102,8 +102,8 @@ class TicketMaster
             logger.info(jsonResult);
             return jsonResult;
         }else {
-            logger.log(Level.SEVERE, "Got error status: %S", response.getStatus());
-            logger.log(Level.SEVERE, "Error msg: %S",response.readEntity(String.class));
+            logger.log(Level.SEVERE, "Got error status: %s", response.getStatus());
+            logger.log(Level.SEVERE, "Error msg: %s",response.readEntity(String.class));
             return null;
         }
     }

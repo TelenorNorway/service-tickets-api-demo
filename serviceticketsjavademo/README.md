@@ -24,7 +24,7 @@ https://developer.telenor.no/api/administration/serviceticketapi/
 Tested with Java 8, but should be mostly compatible with older versions.
 
 ## Usage ##
-1. Enter the following credentials credentials.properties:
+1. Enter the following credentials in credentials.properties:
     * replace {{username}}
     * replace {{password}}
     * replace {{clientId}}
