@@ -24,7 +24,7 @@ https://developer.telenor.no/api/administration/serviceticketapi/
 Tested with Java 8, but should be mostly compatible with older versions.
 
 ## Usage ##
-1. Enter the following credentials in TicketMaster.java:
+1. Enter the following credentials credentials.properties:
     * replace {{username}}
     * replace {{password}}
     * replace {{clientId}}
@@ -35,7 +35,7 @@ Tested with Java 8, but should be mostly compatible with older versions.
 
 ## Terms & Conditions ##
 
-These code examples are written for demonstrational purposes only. 
+These code examples are written for demonstration purposes only. 
 Do NOT use in production grade code without adding sufficient error handling and securing of credentials.
 You may use these code examples in your programs and documentation. 
 You do not need to contact Telenor for permission. 
