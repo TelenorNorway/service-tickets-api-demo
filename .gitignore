@@ -58,7 +58,7 @@ typings/
 .env
 
 # Intellij
-
+.idea/
 */target/**
 /serviceticketsjavademo/serviceticketsjavademo.iml
-/.idea/
+

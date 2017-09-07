@@ -1,19 +1,21 @@
 package com.telenor.demo;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.logging.Logger;
 
 @XmlRootElement
 public class AccessToken {
+
+    private static final Logger logger = Logger.getLogger(AccessToken.class.getName());
 
     private int expires_in;
     private String access_token;
 
     private long created;
 
-    /**
-     * POJO Constructor
-     */
-    public AccessToken() { }
+    public AccessToken() {
+        //empty bean constructor
+    }
 
     public int getExpires_in() {
         return expires_in;
@@ -35,11 +37,11 @@ public class AccessToken {
 
     public boolean hasExpired(){
         if(expires_in<=(System.currentTimeMillis()-created) ) {
-            //NB: recommend using real logging
-            System.out.println("Access token has expired");
+
+            logger.info("Access token has expired");
             return true;
         }else {
-            System.out.println("Access token is still valid");
+            logger.info("Access token is still valid");
             return false;
         }
     }
